@@ -1,0 +1,72 @@
+
+
+body {
+    text-align: center;
+    font-family: "Roboto";
+    color: white;
+    font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #fbc2eb, #a6c1ee, #fddb92, #d4fc79);
+  background-size: 400% 400%;
+  animation: background-color-cycle 15s ease infinite;
+}
+
+body,
+body * {
+  cursor: url("images/mouse.png") 13 2, auto;
+}
+
+@keyframes background-color-cycle {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 80vh;
+  padding: 1rem;
+}
+
+.center-area {
+  text-align: center;
+}
+
+.center-area h1 {
+  margin-bottom: 0;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.side-image img {
+  display: block;
+  width: min(42vw, 24rem);
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+  .image-row {
+    gap: 1rem;
+  }
+}
